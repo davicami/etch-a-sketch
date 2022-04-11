@@ -2,35 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-/* box-sizing and font sizing */
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-html {
-    /* Include padding and border in the element's total width and height:*/
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', 'Ubuntu', sans-serif;
-}
-
-/* Base reset */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* box-sizing and font sizing */
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-html {
-    /* Include padding and border in the element's total width and height:*/
     box-sizing: border-box;
 }
 
@@ -42,8 +13,41 @@ body {
     display: flex;
     flex-direction: column;
     background-color: gray;
+    padding: 10px;
+    min-height: 100vh;
 }
 
 .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vh;
+}
 
+.app{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 50px;
+}
+
+.controls{
+    display: flex;
+    direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.grid{
+    display: grid;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+}
+
+.footer{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
